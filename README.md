@@ -2,4 +2,4 @@
 Trabalho de Programação para a Web
 
 obs:
-Usuário só tem os atributos, ainda não tem os métodos
+Os modelos só tem os atributos, ainda não tem métodos
