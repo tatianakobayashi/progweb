@@ -6,7 +6,7 @@ class Livro
 {
 	
 	private $titulo; 
-	private $subTítulo; 
+	private $subTitulo; 
 	private $autores; 
 	private $editora; 
 	private $edicao; 
@@ -15,10 +15,10 @@ class Livro
 	private $descricao; 
 	private $areaDeConhecimento;
 	
-	function __construct($titulo, $subTítulo, $autores, $editora, $edicao, $dataDePublicacao, $capa, $descricao, $areaDeConhecimento)
+	function __construct($titulo, $subTitulo, $autores, $editora, $edicao, $dataDePublicacao, $capa, $descricao, $areaDeConhecimento)
 	{
 		$this->titulo = $titulo; 
-		$this->subTítulo = $subTítulo; 
+		$this->subTitulo = $subTitulo; 
 		$this->autores = $autores; 
 		$this->editora = $editora; 
 		$this->edicao = $edicao; 
