@@ -12,5 +12,14 @@
 			parent::__construct($nome, $email, $cpf, $senha, $telefone);
 			$this->RP = $RP;
 		}
+
+		public function getRp()
+		{
+			return $this->RP;
+		}
+		public function setRp($RP)
+		{
+			$this->RP = $RP;
+		}
 	}
 ?>
