@@ -16,6 +16,25 @@ class LivroFisico extends Livro
 		// ???
 		$copias = array();
 	}
+
+	public function getNumeroCopias()
+	{
+		return $this->numeroCopias;
+	}
+	public function setNumeroCopias($numeroCopias)
+	{
+		$this->numeroCopias = $numeroCopias;
+	}
+
+	public function getCopias()
+	{
+		return $this->copias;
+	}
+	public function setCopias($copias)
+	{
+		$this->copias = $copias;
+	}
+
 }
 
 
