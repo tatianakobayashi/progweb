@@ -1,0 +1,353 @@
+
+html,body{
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+.background{
+    opacity: 0.7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://pazarlamasyon.com/wp-content/uploads/2018/12/library-books-shelves-wallpaper-81891-awesome-design.jpg');
+    background-size: cover;
+}
+.container{
+    height: 100%;
+    align-content: center;
+}
+
+.card-header h3{
+    color: white;
+}
+.card-body h1{
+    color: white;
+}
+#card-title1{
+    color: black;
+}
+#card-title2{
+    color: white;
+}
+.scroll{
+    overflow: scroll;
+    width:600px;
+    height:200px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(6, 124, 255, 0.12);
+    border-radius: 0.25rem;
+}
+.botoes{
+    float: right;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+#container2{
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 1000px;
+    background-color: rgba(0,0,0,0.9) !important;
+}
+.h3{
+    color: white;
+}
+
+#caixa{
+    background-color: white;
+
+}
+
+.card1{
+    position: relative;
+    z-index: 9;
+    height: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.7) !important;
+}
+.card2{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    margin: 100px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(6, 124, 255, 0.12);
+    border-radius: 0.25rem;
+    height: auto;
+    width: auto;
+    background-color: rgba(0,0,0,0.9) !important;
+}
+
+.card3{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    margin: 100px;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(6, 124, 255, 0.12);
+    border-radius: 0.25rem;
+    height: 86%;
+    width: auto;
+    background-color: rgba(0,0,0,0.9) !important;
+    /*
+    align-content: center;
+    height: 350px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,10) !important;
+    */
+}
+.card4{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    margin: auto;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(6, 124, 255, 0.12);
+    border-radius: 0.25rem;
+    margin-top: 10%;
+    width: 90%;
+    height: 390px;
+    background-color: rgba(0,0,0,8) !important;
+}
+.livroCont{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    width: auto;
+    background-color: rgba(0,0,0,0.9) !important;
+}
+.livro{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+
+    height: 100%;
+    width: auto;
+    background-color: white;
+}
+.content{
+    background-color: rgba(0,0,0,0.9);
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.item{
+    background-color: white;
+}
+.centralizar{
+    align-content: center;
+    height: 350px;
+    margin-top: 70px;
+    margin-bottom: auto;
+    width: 400px;
+}
+#right{
+    float: right;
+    margin-top: 10%;
+}
+#left{
+    float: left;
+    margin-top: 5%;
+
+}
+#center{
+    margin-top: 2%;
+}
+
+.social_icon span{
+    font-size: 60px;
+    margin-left: 10px;
+    color: #067cff;
+}
+
+.social_icon span:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.social_icon{
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+
+.input-group-prepend span{
+    width: 50px;
+    background-color: #067cff;
+    color: black;
+    border:0 !important;
+}
+
+input:focus{
+    outline: 0 0 0 0  !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.remember{
+    color: rgba(255, 253, 8, 0.99);
+}
+
+.remember input
+{
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.login_btn{
+    color: black;
+    background-color: #067cff;
+    width: 100px;
+}
+
+.login_btn:hover{
+    color: black;
+    background-color: white;
+}
+
+.links{
+    color: white;
+}
+
+.links a{
+    margin-left: 4px;
+}
+#text{
+    opacity: 0.9;
+    color: #ffffff;
+}
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 10;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 350px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 50%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*Livros.php
+<div class="row" id="card4" >
+
+    <div class="col-md-4">
+
+        <div class="card" style="width: 18rem;">
+            <img class="mw-100" src="https://http2.mlstatic.com/principios-de-bioquimica-lehninger-D_NQ_NP_631314-MLB30750898459_052019-Q.jpg" alt="Max-width 100%">
+
+            <div class="card-body" id="caixa">
+                <h5 class="card-title">Princípios de Bioquímica</h5>
+                <a class="btn btn-primary" type="button"href="Livro.php">Ver</a>
+            </div>
+            <div class="card-body">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="card" id="right" style="width: 30rem;">
+        <div class="btn-group-vertical" id="right">
+            <button type="button" class="btn btn-primary">Apple</button>
+            <button type="button" class="btn btn-primary">Samsung</button>
+            <button type="button" class="btn btn-primary">Sony</button>
+        </div>
+    </div>
+</div>*/
