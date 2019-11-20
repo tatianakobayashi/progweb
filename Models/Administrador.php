@@ -1,16 +1,24 @@
 <?php
-	include('Usuario.php');
 	/**
 	 *  Administrador
 	 */
-	class Administrador extends Usuario{
+	class Administrador{
 
 		private $registro;
 		
-		function __construct($registro, $nome, $email, $cpf, $senha, $telefone)
+		function __construct($registro, $usuarioId)
 		{
-			parent::__construct($nome, $email, $cpf, $senha, $telefone);
 			$this->registro = $registro;
+			$this->usuarioId = $usuarioId;
+		}
+		
+		public function getUsuarioId()
+		{
+			return $this->usuarioId;
+		}
+		public function setUsuarioId($usuarioId)
+		{
+			$this->usuarioId = $usuarioId;
 		}
 
 		public function getRegistro()
