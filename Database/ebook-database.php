@@ -22,7 +22,7 @@ function getAllEbooks() {
 }
 
 function alterEbook($ebook) {
-    $query = "update ebooks set disponivel = $ebook->getDisponivel(), livroId = $ebook->getLivroId() where id = {$ebook->getId()}";
+    $query = "update ebooks set disponivel = {$ebook->getDisponivel()}, livroId = {$ebook->getLivroId()} where id = {$ebook->getId()}";
     return mysqli_query($connection, $query);
 }
 
