@@ -1,16 +1,25 @@
 <?php
-	include('Usuario.php');
 	/**
-	 *  Usuário
+	 *  Professor
 	 */
-	class Professor extends Usuario{
+	class Professor{
 
+		private $usuarioId;
 		private $RP;
 		
-		function __construct($RP, $nome, $email, $cpf, $senha, $telefone)
+		function __construct($RP, $usuarioId)
 		{
-			parent::__construct($nome, $email, $cpf, $senha, $telefone);
 			$this->RP = $RP;
+			$this->usuarioId = $usuarioId;
+		}
+
+		public function getUsuarioId()
+		{
+			return $this->usuarioId;
+		}
+		public function setUsuarioId($usuarioId)
+		{
+			$this->usuarioId = $usuarioId;
 		}
 
 		public function getRp()
