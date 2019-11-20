@@ -2,8 +2,7 @@
 /**
  *  LivroFisico
  */
-class LivroFisico extends Livro
-{
+class LivroFisico{
 	
 	private $id;
 	private $numeroCopia; 
