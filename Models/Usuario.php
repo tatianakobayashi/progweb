@@ -8,6 +8,7 @@
 	 *	- Criptografia das senhas (?)
 	 */
 	class Usuario{
+		private $id;
 		private $nome;
 		private $email;
 		private $cpf;
@@ -21,6 +22,26 @@
 			$this->cpf = $cpf;
 			$this->senha = $senha;
 			$this->telefone = $telefone;
+		}
+		
+		function __construct($id, $nome, $email, $cpf, $senha, $telefone)
+		{
+			$this->id = $id;
+			$this->nome = $nome;
+			$this->email = $email;
+			$this->cpf = $cpf;
+			$this->senha = $senha;
+			$this->telefone = $telefone;
+		}
+
+		public function getId()
+		{
+			return $this->id;
+		}
+
+		public function setId($id)
+		{
+			$this->id = $id;
 		}
 
 		public function getNome()

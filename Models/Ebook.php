@@ -2,15 +2,33 @@
 /**
  *  Ebook
  */
-class Ebook extends Livro
+class Ebook
 {
 	
+	private $id; 
 	private $disponivel; 
+	private $livroId; 
 
-	function __construct($disponivel, $titulo, $subTítulo, $autores, $editora, $edicao, $dataDePublicacao, $capa, $descricao, $areaDeConhecimento)
+	function __construct($disponivel, $livroId)
 	{
-		parent::__construct($titulo, $subTítulo, $autores, $editora, $edicao, $dataDePublicacao, $capa, $descricao, $areaDeConhecimento);
 		$this->disponivel = $disponivel; 
+		$this->livroId = $livroId; 
+	}
+
+	function __construct($id, $disponivel, $livroId)
+	{
+		$this->id = $id; 
+		$this->disponivel = $disponivel; 
+		$this->livroId = $livroId; 
+	}
+
+	public function getId()
+	{
+		return $this->id;
+	}
+	public function setId($id)
+	{
+		$this->id = $id;
 	}
 
 	public function getDisponivel()
@@ -20,6 +38,15 @@ class Ebook extends Livro
 	public function setDisponivel($disponivel)
 	{
 		$this->disponivel = $disponivel;
+	}
+
+	public function getLivroId()
+	{
+		return $this->livroId;
+	}
+	public function setLivroId($livroId)
+	{
+		$this->livroId = $livroId;
 	}
 }
 

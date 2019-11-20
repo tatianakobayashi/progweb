@@ -5,34 +5,52 @@
 class LivroFisico extends Livro
 {
 	
-	private $numeroCopias; 
-	private $copias;
+	private $id;
+	private $numeroCopia; 
+	private $disponivel; 
+	private $livroId; 
 
-	function __construct($numeroCopias, $titulo, $subTítulo, $autores, $editora, $edicao, $dataDePublicacao, $capa, $descricao, $areaDeConhecimento)
+	function __construct($disponivel, $livroId, $numeroCopia)
 	{
-		parent::__construct($titulo, $subTítulo, $autores, $editora, $edicao, $dataDePublicacao, $capa, $descricao, $areaDeConhecimento);
-		$this->numeroCopias = $numeroCopias; 
-
-		// ???
-		$copias = array();
+		$this->disponivel = $disponivel; 
+		$this->livroId = $livroId;
+		$this->numeroCopia = $numeroCopia;
 	}
 
-	public function getNumeroCopias()
+	public function getId()
 	{
-		return $this->numeroCopias;
+		return $this->id;
 	}
-	public function setNumeroCopias($numeroCopias)
+	public function setId($id)
 	{
-		$this->numeroCopias = $numeroCopias;
+		$this->id = $id;
 	}
 
-	public function getCopias()
+	public function getDisponivel()
 	{
-		return $this->copias;
+		return $this->disponivel;
 	}
-	public function setCopias($copias)
+	public function setDisponivel($disponivel)
 	{
-		$this->copias = $copias;
+		$this->disponivel = $disponivel;
+	}
+
+	public function getLivroId()
+	{
+		return $this->livroId;
+	}
+	public function setLivroId($livroId)
+	{
+		$this->livroId = $livroId;
+	}
+
+	public function getNumeroCopia()
+	{
+		return $this->numeroCopia;
+	}
+	public function setNumeroCopia($numeroCopia)
+	{
+		$this->numeroCopia = $numeroCopia;
 	}
 
 }
