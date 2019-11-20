@@ -36,7 +36,7 @@ function getEbookById($id) {
 
 function buscarEbookPorTitulo($titulo) {
     $ebooks = array();
-    $query = "select e.* from ebooks e join livros l on (e.livroId = l.id)  where titulo like '%{$titulo}%'";
+    $query = "select e.* from ebooks e join livros l on (e.livroId = l.id)  where l.titulo like '%{$titulo}%'";
     $result = mysqli_query($connection, $query);
     while($arr = mysqli_fetch_assoc($result)) {
         $ebook = new Ebook($arr["id"], $arr["disponivel"], $arr["livroId"]);
