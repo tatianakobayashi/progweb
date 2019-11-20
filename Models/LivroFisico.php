@@ -17,6 +17,14 @@ class LivroFisico extends Livro
 		$this->numeroCopia = $numeroCopia;
 	}
 
+	function __construct($id, $disponivel, $livroId, $numeroCopia)
+	{
+		$this->id = $id;
+		$this->disponivel = $disponivel; 
+		$this->livroId = $livroId;
+		$this->numeroCopia = $numeroCopia;
+	}
+
 	public function getId()
 	{
 		return $this->id;
